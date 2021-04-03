@@ -39,18 +39,7 @@ styles: {
 
 
 
-
-// Or use javascript directly:
-// doc.autoTable({
-//   head: [['Invoice #', 'Vendor', 'Amount','Desc','Date','Status']],
-//   body: [
-//     ['David', 'david@example.com', 'Sweden'],
-//     ['Castille', 'castille@example.com', 'Spain'],
-//     // ...
-//   ],
-// })
-
-doc.save('table.pdf')
+doc.save(invoiceType+ "_"+new Date().toISOString().slice(0, 10)+" invoices.pdf")
 
   }
 export default generatePDF;
