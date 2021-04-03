@@ -39,6 +39,9 @@ styles: {
 
 
 
+
+
+
 doc.save(invoiceType+ "_"+new Date().toISOString().slice(0, 10)+" invoices.pdf")
 
   }
